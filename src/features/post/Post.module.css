@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+.outer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    margin: 1rem;
+    border: 3px solid rgba(159, 159, 159, 0.2);
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: border 0.2s ease-out, box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.container:hover {
+    border: 3px solid rgba(159, 159, 159, 0.5);
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+    background-color: #fdfffc;
+}
+
+.arrows {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 100px;
+    
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline {
+    grid-area: 1 / 2 / 2 / 4;
+    max-width: 100%;
+    margin: auto 2rem;
+}
+
+.headline a {
+    color: red;
+    width: 100%;
+
+}
+
+.headline a:hover {
+    color: rgb(197, 1, 1);
+    cursor: pointer;
+}
+
+.headline a:visited {
+    color: #121418;
+}
+
+.headline a h2 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.image {
+    grid-area: 2 / 2 / 7 / 4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 320px;
+    max-height: 320px;
+}
+
+.image img {
+    width: 100%; 
+    
+    object-fit: cover;
+}
+
+.subline {
+    grid-area: 7 / 2 / 8 / 4;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    overflow: hidden;
+    font-size: 14px;
+    color: red;
+    font-weight: 500;
+}
+
+.subline p {
+    margin: 0.5rem;
+}
+
+/*
+Consolidated the .grid-container into .container
+.grid-container {
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+*/

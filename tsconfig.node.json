@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "jest", "redux-mock-store", "testing-library__jest-dom"]
+  },
+  "include": ["vite.config.ts"]
+}

@@ -1,0 +1,135 @@
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(233, 230, 228, 0.6);
+  margin: 0;
+}
+
+.app {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  position: relative;
+}
+
+nav {
+  background-color: rgba(83, 83, 86);
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+  border: auto;
+  opacity: 1;
+}
+
+nav div {
+  text-align: center;
+  width: 300px;
+  padding: 0.6rem 1rem;
+  margin: 0 auto;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+  opacity: 1;
+  transition: color 0.3s ease-in-out;
+  position: relative; 
+  z-index: 1; 
+}
+
+nav div:hover {
+  color: rgb(197, 1, 1);
+}
+
+@keyframes moveAround {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); 
+  }
+  25% {
+    transform: translate(100%, 100%) rotate(90deg); 
+  }
+  50% {
+    transform: translateX(100%) rotate(180deg); 
+  }
+  75% {
+    transform: translate(-50%, 100%) rotate(270deg); 
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); 
+  }
+}
+
+.rickRollGIF {
+  width: 300px;
+  height: 200px; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  animation: moveAround 8s linear infinite;
+  background-image: url('https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif');
+  background-size: cover;
+  z-index: 100;
+}
+
+#logo:hover + .rickRollGIF {
+  display: block;
+}
+
+.main {
+  text-align: center;
+  position: relative;
+  top: 42px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: red;
+  outline: none;
+}
+
+button {
+  background-color: red;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+button:hover {
+  background-color: rgb(197, 1, 1);
+}
+
