@@ -65,5 +65,6 @@
       "react/jsx-no-target-blank": "off"
     }
   },
-  "prettier": "prettier-config-nick"
+  "prettier": "prettier-config-nick",
+  "homepage": "https://jayteex.github.io/react-redux-reddit-jsonapi/"
 }
