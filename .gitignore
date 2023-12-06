@@ -23,9 +23,6 @@ node_modules
 # Testing
 coverage
 
-# Production
-build
-
 # Miscellaneous
 *.local
 .DS_Store
