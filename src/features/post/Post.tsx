@@ -26,7 +26,7 @@ export function Post() {
 			</div>
 		);
 	};
-	
+
 	//Animation, for example when wrong subreddit is input
 	if (error) {
 		return (
@@ -72,9 +72,8 @@ export function Post() {
 						</a>
 					</div>
 					<div className={styles.image}>
-						{/* Makes sure that the reddit fallback logo is shown when the thumbnail is not a URL. There probably is a more elegant way to solve it*/}
-						{post.thumbnail !== "self" && post.thumbnail !== "defaul" && post.thumbnail !== "image" && !post.thumbnail.includes("external") &&
-						 post.thumbnail !== "nsfw" && post.thumbnail !== "" && post.thumbnail !== "spoiler" ? (
+
+						{post.thumbnail.includes("https") && !post.thumbnail.includes("external") ? (
 							<img src={post.thumbnail} alt="Thumbnail" />
 						) : (
 							<img src="https://www.redditinc.com/assets/images/site/Reddit_Icon_FullColor-1_2023-11-29-161416_munx.jpg" alt="Fallback Thumbnail" />
