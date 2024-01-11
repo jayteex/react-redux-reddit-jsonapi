@@ -1,27 +1,7 @@
-# vite-template-redux
+# rddt minimal
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+This app fetches data from the reddit JSON API. The user can specify any subreddit of their choosing, and the corresponding data will be fetched. The user can then search the fetched posts in real time, then choose a story that is most interesting to them and get redirected direclty to it.
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
-```
+## Overview
 
-## Goals
-
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
-
-## Scripts
-
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
-
-## Inspiration
-
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+This is a React application that allows users to manage their contacts and appointments. Users can add both contacts and appointments, making it a convenient tool for staying organized and keeping track of important dates.

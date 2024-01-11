@@ -33,7 +33,7 @@ nav {
 
 nav div {
   text-align: center;
-  width: 300px;
+  width: 260px;
   padding: 0.6rem 1rem;
   margin: 0 auto;
   font-family: 'Century Gothic', sans-serif;
@@ -110,6 +110,7 @@ input {
   border-radius: 4px;
   width: 300px;
   transition: border-color 0.3s ease-in-out;
+  margin-top: 10px;
 }
 
 input:focus {

@@ -34,7 +34,7 @@ function App() {
 						onMouseEnter={handleLogoHover}
 						onMouseLeave={handleLogoHoverOut}
 					>
-						Reddit Minimal
+						rddt minimal
 					</div>
 				</nav>
 				{showRickRollGIF && <div className="rickRollGIF"></div>}
